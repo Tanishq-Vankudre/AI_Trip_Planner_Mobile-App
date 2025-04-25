@@ -105,7 +105,7 @@ export default function SignIn() {
           color:Colors.WHITE,
           textAlign:'center',
         }}>
-          SignIn
+          Sign In
         </Text>
       </TouchableOpacity>
 

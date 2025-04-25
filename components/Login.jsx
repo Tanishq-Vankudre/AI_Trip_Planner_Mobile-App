@@ -32,7 +32,7 @@ export default function Login() {
             textAlign:'center',
             fontFamily:'outfit',
             fontSize:17
-          }}>Sign in with Google</Text>
+          }}>Get Started</Text>
         </TouchableOpacity>
       </View>
     </View>
