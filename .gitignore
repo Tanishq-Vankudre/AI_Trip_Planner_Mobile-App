@@ -59,3 +59,5 @@ npm-debug.log*
 expo-debug.log
 
 .expo-env.d.ts
+
+expo-env.d.ts
