@@ -5,10 +5,12 @@ import { Colors } from '../../constants/Colors';
 import { SelectTravelesList } from '../../constants/Options';
 import OptionCard from '../../components/CreateTrip/OptionCard';
 import { CreateTripContext } from '../../context/CreateTripContext';
+import { useRouter } from 'expo-router';
+
 export default function SelectTraveler() {
 
     const navigation = useNavigation();
-
+    const router=useRouter();
     const [selectedTraveler,setSelectedTraveler]= useState();
 
     const {tripdata,setTripData} = useContext(CreateTripContext);
@@ -61,7 +63,9 @@ export default function SelectTraveler() {
           )}
         />
       </View>
-      <TouchableOpacity style={{
+      <TouchableOpacity 
+      onPress={()=>router.push('/create-trip/select-dates')}
+        style={{
         padding:20,
         backgroundColor:Colors.PRIMARY,
         borderRadius:15,
