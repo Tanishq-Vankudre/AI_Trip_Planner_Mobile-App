@@ -39,6 +39,8 @@ ios/
 # Firebase configs and env files
 firebaseConfig.js
 configs/FirebaseConfig.js
+AiModal.js
+configs/AiModal.js
 .env
 .env.*
 

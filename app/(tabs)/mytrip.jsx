@@ -8,7 +8,6 @@ import StartNewTripCard from '../../components/MyTrips/StartNewTripCard';
 export default function MyTrip() {
 
   const [userTrips, setUserTrips] = useState([]);
-
   return (
     <View style={{
       padding:25,
