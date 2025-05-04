@@ -10,7 +10,7 @@ export default function SelectDates() {
   const navigation = useNavigation();
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
-  const {tripdata,setTripData} = useContext(CreateTripContext);
+  const {tripData,setTripData} = useContext(CreateTripContext);
   const router = useRouter();
   
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function SelectDates() {
     const totalNoOfDays = endDate.diff(startDate, 'days') + 1;
     console.log('Total number of days:', totalNoOfDays);
     setTripData({
-      ...tripdata,
+      ...tripData,
       startDate:startDate,
       endDate:endDate,
       totalNoOfDays:totalNoOfDays,

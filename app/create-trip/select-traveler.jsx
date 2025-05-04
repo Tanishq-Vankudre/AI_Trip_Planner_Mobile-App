@@ -13,7 +13,7 @@ export default function SelectTraveler() {
     const router=useRouter();
     const [selectedTraveler,setSelectedTraveler]= useState();
 
-    const {tripdata,setTripData} = useContext(CreateTripContext);
+    const {tripData,setTripData} = useContext(CreateTripContext);
     useEffect(()=>{
         navigation.setOptions({
             headerShown: true,
@@ -23,14 +23,14 @@ export default function SelectTraveler() {
     },[])
 
     useEffect(()=>{
-      setTripData({...tripdata,
+      setTripData({...tripData,
         traveler:selectedTraveler
       })
     },[selectedTraveler]);
 
     useEffect(()=>{
-      console.log(tripdata);
-    },[tripdata])
+      console.log(tripData);
+    },[tripData])
 
   return (
     <View style={{
